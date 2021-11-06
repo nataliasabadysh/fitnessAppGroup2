@@ -1,9 +1,6 @@
-// Core
 import { combineReducers } from 'redux';
+import { authReducer } from '../redux/auth/reducer';
 
-const userReducer = (state={name: ''}, actions) => state
-
-// Reducers
 export const rootReducer = combineReducers({
-    user: userReducer
+	auth: authReducer,
 });
